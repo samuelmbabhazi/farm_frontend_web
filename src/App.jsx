@@ -1,9 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import OnboardingScreen from "./pages/Onboarding";
+
+import Getstart from "./pages/Getstart";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="*" element={<OnboardingScreen />} />
+          <Route path="/getstart" element={<Getstart />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
