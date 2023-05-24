@@ -83,6 +83,12 @@ function LoginForm({ onLogin }) {
                         Se connecter
                       </a>
                     </button>
+                    <a
+                      href="/signup"
+                      className=" text-md font-medium underline text-[#00600d]"
+                    >
+                      Vous n'avez pas de compte ?
+                    </a>
                   </div>
                 </div>
               </div>
