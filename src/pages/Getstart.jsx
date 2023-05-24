@@ -14,7 +14,9 @@ function Getstart() {
       </div>
       <div className=" absolute bottom-6">
         <button className="bg-[#023008]  rounded-full p-3 px-12 flex justify-center">
-          <span className="text-white text-lg">Commencer</span>
+          <a href="/login" className="text-white text-lg">
+            Commencer
+          </a>
         </button>
       </div>
     </div>
