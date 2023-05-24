@@ -1,4 +1,3 @@
-import logo from "../assets/onboardingImg/logo.png";
 import get from "../assets/onboardingImg/get.svg";
 
 function Getstart() {
@@ -14,7 +13,7 @@ function Getstart() {
         <p className=" font-light ">Une ferme prospère !</p>
       </div>
       <div className=" absolute bottom-6">
-        <button className="background  rounded-md p-3 px-12 flex justify-center">
+        <button className="bg-[#023008]  rounded-full p-3 px-12 flex justify-center">
           <span className="text-white text-lg">Commencer</span>
         </button>
       </div>
