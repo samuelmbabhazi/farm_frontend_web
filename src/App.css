@@ -1,0 +1,26 @@
+.bg-gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(16, 84, 13, 1) 100%
+  );
+}
+.background {
+  background: linear-gradient(274.42deg, #032f02 0%, #9dffb3 124.45%);
+}
+.textgradient {
+  background: linear-gradient(274.42deg, #032f02 0%, #9dffb3 124.45%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+body {
+  background: url("../public/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  overflow: hidden !important;
+}
