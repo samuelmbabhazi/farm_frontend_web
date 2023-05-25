@@ -46,7 +46,7 @@ const OnboardingScreen = () => {
   };
 
   return (
-    <div className="flex w-[90vw]  flex-col justify-stretch  h-[100vh]">
+    <div className="flex w-[90vw] m-auto flex-col justify-stretch  h-[100vh]">
       <img src={pages[currentPage].img} className="h-[50vh]" />
       <h1 className=" font-extrabold  top-12 text-center text-2xl my-3 mx-6  ">
         {pages[currentPage].title}
@@ -54,14 +54,20 @@ const OnboardingScreen = () => {
       <p className="mx-6   text-center font-light">
         {pages[currentPage].content}
       </p>
-      <div className="flex mx-6 justify-between gap-64 items-center absolute bottom-3">
+      <div className="flex mx-6 justify-between  items-center relative ">
         {currentPage < pages.length - 1 && currentPage > 0 && (
-          <button onClick={handleSkip} className=" text-md font-bold">
+          <button
+            onClick={handleSkip}
+            className=" text-md absolute top-20 left-0 font-bold"
+          >
             Prev
           </button>
         )}
         {currentPage <= pages.length - 1 && (
-          <button className="text-md font-bold " onClick={handleNext}>
+          <button
+            className="text-md absolute top-20 bottom-0 font-bold right-0"
+            onClick={handleNext}
+          >
             Next
           </button>
         )}
