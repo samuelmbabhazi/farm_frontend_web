@@ -1,8 +1,8 @@
-import get from "../assets/onboardingImg/get.svg";
+import get from "../assets/onboardingImg/onboard3.svg";
 
 function Getstart() {
   return (
-    <div className="flex flex-col gap-20  items-center h-[100vh]">
+    <div className="flex w-[90vw] justify-center m-auto flex-col gap-20  items-center h-[100vh]">
       <div>
         <img src={get} className="w-[100vw]" />
       </div>
