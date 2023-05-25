@@ -65,7 +65,7 @@ const OnboardingScreen = () => {
         )}
         {currentPage <= pages.length - 1 && (
           <button
-            className="text-md absolute top-20 bottom-0 font-bold right-0"
+            className="text-md absolute  top-20 font-bold right-0"
             onClick={handleNext}
           >
             Next

@@ -5,6 +5,7 @@ import OnboardingScreen from "./pages/Onboarding";
 import Getstart from "./pages/Getstart";
 import LoginForm from "./pages/Login";
 import SignupForm from "./pages/Signup";
+import Card2 from "./components/cards/HomeCard";
 
 function App() {
   function onLogin(email, password) {
@@ -19,7 +20,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="*" element={<OnboardingScreen />} />
+          <Route path="*" element={<Card2 />} />
           <Route path="/getstart" element={<Getstart />} />
           <Route path="/login" element={<LoginForm onLogin={onLogin} />} />
           <Route path="/signup" element={<SignupForm onSignup={onSignup} />} />
